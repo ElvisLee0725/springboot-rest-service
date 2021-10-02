@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.List;
 
 @SpringBootApplication
-public class SpringBootRestServiceApplication implements CommandLineRunner {
+public class SpringBootRestServiceApplication {
 
 	@Autowired
 	LibraryRepository repository;
@@ -19,7 +19,7 @@ public class SpringBootRestServiceApplication implements CommandLineRunner {
 		SpringApplication.run(SpringBootRestServiceApplication.class, args);
 	}
 
-
+/*
 	@Override
 	public void run(String[] args) throws Exception{
 		Library lib = repository.findById("fdsefr343").get();
@@ -44,4 +44,5 @@ public class SpringBootRestServiceApplication implements CommandLineRunner {
 
 		// repository.deleteById("abcde1234");
 	}
+	*/
 }
