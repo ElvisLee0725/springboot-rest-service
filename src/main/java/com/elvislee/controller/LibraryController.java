@@ -2,6 +2,8 @@ package com.elvislee.controller;
 
 import com.elvislee.repository.LibraryRepository;
 import com.elvislee.service.LibraryService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -19,6 +21,9 @@ public class LibraryController {
     @Autowired
     LibraryService libraryService;
 
+    // Implement logger in LibraryController
+    private static final Logger logger = LoggerFactory.getLogger(LibraryController.class);
+
     @PostMapping("/addBook")
     public ResponseEntity<AddResponse> addBookImplementation(@RequestBody Library library) {
         String id = libraryService.buildId(library.getIsbn(), library.getAisle());
@@ -26,10 +31,14 @@ public class LibraryController {
 
         // Check if the book is already in database
         if(libraryService.checkBookAlreadyExist(id)) {
+            logger.info("Book already exist, skipping creation");
+
             addResponse.setMsg("Book already exist");
             addResponse.setId(id);
             return new ResponseEntity<AddResponse>(addResponse, HttpStatus.ACCEPTED);
         }
+
+        logger.info("Book does not exist yet, creating one");
 
         library.setId(id);
 

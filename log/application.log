@@ -1,0 +1,63 @@
+2021-10-23 12:23:06.771  INFO 20932 --- [main] c.e.SpringBootRestServiceApplication     : Starting SpringBootRestServiceApplication on Debras-iMac with PID 20932 (/Users/debra_elvis/Desktop/SpringBootRestService/target/classes started by debra_elvis in /Users/debra_elvis/Desktop/SpringBootRestService)
+2021-10-23 12:23:06.773  INFO 20932 --- [main] c.e.SpringBootRestServiceApplication     : No active profile set, falling back to default profiles: default
+2021-10-23 12:23:07.801  INFO 20932 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-10-23 12:23:07.897  INFO 20932 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58ms. Found 1 JPA repository interfaces.
+2021-10-23 12:23:08.419  INFO 20932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-23 12:23:08.427  INFO 20932 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-23 12:23:08.427  INFO 20932 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-10-23 12:23:08.522  INFO 20932 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-23 12:23:08.522  INFO 20932 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1621 ms
+2021-10-23 12:23:08.767  INFO 20932 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-23 12:23:08.850  INFO 20932 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-23 12:23:08.932  WARN 20932 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-23 12:23:08.969  INFO 20932 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2021-10-23 12:23:09.198  INFO 20932 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-10-23 12:23:09.340  INFO 20932 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-23 12:23:09.486  INFO 20932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-23 12:23:09.487  INFO 20932 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-10-23 12:23:09.650  INFO 20932 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-23 12:23:09.678  INFO 20932 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-10-23 12:23:10.307  INFO 20932 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-23 12:23:10.316  INFO 20932 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-23 12:23:10.498  INFO 20932 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-10-23 12:23:10.504  INFO 20932 --- [main] c.e.SpringBootRestServiceApplication     : Started SpringBootRestServiceApplication in 4.809 seconds (JVM running for 5.614)
+2021-10-23 12:23:32.635  INFO 20932 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-23 12:23:32.636  INFO 20932 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-23 12:23:32.658  INFO 20932 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2021-10-23 12:23:33.073  INFO 20932 --- [http-nio-8080-exec-1] c.elvislee.controller.LibraryController  : Book does not exist yet, creating one
+2021-10-23 12:23:35.400  INFO 20932 --- [http-nio-8080-exec-2] c.elvislee.controller.LibraryController  : Book already exist, skipping creation
+2021-10-23 12:29:23.051  INFO 20932 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-23 12:29:23.054  INFO 20932 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-23 12:29:23.054  INFO 20932 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-10-23 12:29:23.069  INFO 20932 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-10-23 12:29:30.666  INFO 21013 --- [main] c.e.SpringBootRestServiceApplication     : Starting SpringBootRestServiceApplication on Debras-iMac with PID 21013 (/Users/debra_elvis/Desktop/SpringBootRestService/target/classes started by debra_elvis in /Users/debra_elvis/Desktop/SpringBootRestService)
+2021-10-23 12:29:30.669  INFO 21013 --- [main] c.e.SpringBootRestServiceApplication     : No active profile set, falling back to default profiles: default
+2021-10-23 12:29:31.457  INFO 21013 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-10-23 12:29:31.544  INFO 21013 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 1 JPA repository interfaces.
+2021-10-23 12:29:32.093  INFO 21013 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-23 12:29:32.100  INFO 21013 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-23 12:29:32.100  INFO 21013 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2021-10-23 12:29:32.205  INFO 21013 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-23 12:29:32.206  INFO 21013 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1508 ms
+2021-10-23 12:29:32.486  INFO 21013 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-23 12:29:32.620  INFO 21013 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-23 12:29:32.722  WARN 21013 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-23 12:29:32.747  INFO 21013 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2021-10-23 12:29:33.029  INFO 21013 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-10-23 12:29:33.167  INFO 21013 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-23 12:29:33.489  INFO 21013 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4621f2b5-f86e-4e04-bdd4-0e53956f319c
+
+2021-10-23 12:29:33.550  INFO 21013 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-23 12:29:33.652  INFO 21013 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-10-23 12:29:33.742  INFO 21013 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c297897, org.springframework.security.web.context.SecurityContextPersistenceFilter@4017fe2c, org.springframework.security.web.header.HeaderWriterFilter@5fed9976, org.springframework.security.web.csrf.CsrfFilter@61608e1a, org.springframework.security.web.authentication.logout.LogoutFilter@68a305eb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18d47df0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@9df564f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@33e0c716, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@50b734c4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@677ce519, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@377949f1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d6a8386, org.springframework.security.web.session.SessionManagementFilter@4f363abd, org.springframework.security.web.access.ExceptionTranslationFilter@521441d5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6b8d54da]
+2021-10-23 12:29:33.901  INFO 21013 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-10-23 12:29:33.903  INFO 21013 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-10-23 12:29:34.653  INFO 21013 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-23 12:29:34.662  INFO 21013 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-23 12:29:34.849  INFO 21013 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-10-23 12:29:34.857  INFO 21013 --- [main] c.e.SpringBootRestServiceApplication     : Started SpringBootRestServiceApplication in 4.765 seconds (JVM running for 5.54)
+2021-10-23 12:30:01.304  INFO 21013 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-23 12:30:01.323  INFO 21013 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-23 12:30:01.368  INFO 21013 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 45 ms
