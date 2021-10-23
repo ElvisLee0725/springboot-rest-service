@@ -82,4 +82,9 @@ public class LibraryController {
         return new ResponseEntity<>("Book is deleted", HttpStatus.CREATED);
     }
 
+    @GetMapping("/getAllBooks")
+    public List<Library> getAllBooks() {
+        List<Library> allBooks = repository.findAll();
+        return allBooks;
+    }
 }
