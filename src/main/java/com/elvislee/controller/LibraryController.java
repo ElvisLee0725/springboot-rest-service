@@ -9,6 +9,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.List;
+
 @RestController
 public class LibraryController {
     @Autowired
@@ -54,8 +56,30 @@ public class LibraryController {
     }
 
     @GetMapping("/getBooks/author")
-    public void getBooksByAuthorName(@RequestParam(value="authorname") String authorName) {
+    public List<Library> getBooksByAuthorName(@RequestParam(value="authorname") String authorName) {
+        return repository.findAllByAuthor(authorName);
+    }
 
+    @PutMapping("/updateBook/{id}")
+    public ResponseEntity<Library> updateBook(@PathVariable(value="id") String id,
+                                              @RequestBody Library library) {
+        Library curBook = repository.findById(id).get();
+
+        curBook.setAisle(library.getAisle());
+        curBook.setAuthor(library.getAuthor());
+        curBook.setBook_name(library.getBook_name());
+
+        repository.save(curBook);
+
+        return new ResponseEntity<Library>(curBook, HttpStatus.OK);
+    }
+
+    @DeleteMapping("/deleteBook/{id}")
+    public ResponseEntity<String> deleteBookById(@PathVariable(value="id") String id) {
+        Library libToDelete = repository.findById(id).get();
+        repository.delete(libToDelete);
+
+        return new ResponseEntity<>("Book is deleted", HttpStatus.CREATED);
     }
 
 }
