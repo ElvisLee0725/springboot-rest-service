@@ -1,5 +1,6 @@
 package com.elvislee;
 
+import com.elvislee.controller.AddResponse;
 import com.elvislee.controller.Library;
 import com.elvislee.controller.LibraryController;
 import com.elvislee.repository.LibraryRepository;
@@ -42,13 +43,18 @@ class SpringBootRestServiceApplicationTests {
 	void testAddBooks() {
 		// mock
 		Library lib = buildLibrary();
-		// Mock the return value when dependent class is called:
+		// Mock the return value (Book already exist in this case)when dependent class is called:
 		when(libraryService.buildId(lib.getIsbn(), lib.getAisle())).thenReturn(lib.getId());
 		when(libraryService.checkBookAlreadyExist(lib.getId())).thenReturn(true);
 
 		ResponseEntity response = libraryController.addBookImplementation(lib);
 		System.out.println(response.getStatusCode());
 		assertEquals(response.getStatusCode(), HttpStatus.ACCEPTED);
+
+		AddResponse addResponse = (AddResponse) response.getBody();
+		assertEquals(lib.getId(), addResponse.getId());
+
+		assertEquals("Book already exist", addResponse.getMsg());
 	}
 
 	public Library buildLibrary() {
