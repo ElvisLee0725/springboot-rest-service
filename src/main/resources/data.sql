@@ -1,0 +1,2 @@
+INSERT INTO Storage2(book_name, id, isbn, aisle, author) VALUES('Cypress', '123', 'safsasef', '43', 'Raul Shetty')
+INSERT INTO Storage2(book_name, id, isbn, aisle, author) VALUES('DevOps', '345', 'aabegs', '41', 'Raul Shetty')
